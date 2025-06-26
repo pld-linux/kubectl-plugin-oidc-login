@@ -1,17 +1,17 @@
-%define		vendor_version	1.31.0
+%define		vendor_version	1.33.0
 
 Summary:	kubectl plugin for Kubernetes OpenID Connect authentication
 Name:		kubectl-plugin-oidc-login
-Version:	1.31.0
+Version:	1.33.0
 Release:	1
 License:	Apache v2.0
 Group:		Applications
 Source0:	https://github.com/int128/kubelogin/archive/v%{version}/kubelogin-%{version}.tar.gz
-# Source0-md5:	39b4027ab8bad2db62d4efa81bc5ed23
+# Source0-md5:	7ae544dc3e52241d6049866b5be3151b
 Source1:	kubelogin-vendor-%{vendor_version}.tar.xz
-# Source1-md5:	9b94bfa9bc37aa2b2560179fea2f4924
+# Source1-md5:	89c5206bdecb6fa639a32c4a3754bcbb
 URL:		https://github.com/int128/kubelogin
-BuildRequires:	golang >= 1.23.2
+BuildRequires:	golang >= 1.24.4
 BuildRequires:	rpmbuild(macros) >= 2.009
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
